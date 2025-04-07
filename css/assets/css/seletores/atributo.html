@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*[atributo~=value] ----> Procura a palavra no title para realizar a mudança*/
+        [title~=Streaming]{
+            color:red;
+        }
+
+        [title="anime"]{
+            background-color: rgb(255, 99, 242);
+        }
+
+        /*[atributo|=value] ----> Procura a palavra seguida de hifen no title para realizar a mudança*/
+        [title|=Streaming]{
+            color:green
+        }
+
+        /*[atributo^=value] ----> Procura o prefixo no title para realizar a mudança*/
+        [href^="http://"]{
+            background: rgba(146, 50, 146, 0.493);
+        }
+
+        /*[atributo$=value] ----> Procura o sufixo no title para realizar a mudança*/
+        [href$="login"]{
+            background: rgba(146, 132, 50, 0.493);
+        }
+
+        /*[atributo*=value] ----> Procura a palavra em qualquer lugar no title para realizar a mudança*/
+        [href*="foca"]{
+            background: rgb(15, 214, 42);
+        }
+
+    </style>
+</head>
+<body>
+    <a title="Streaming Netflix" href="http://">Netflix</a>
+    <a title="Streaming-Max" href="http://">Max</a>
+    <a title="anime" href="https://">Anime</a>
+    <a title="prime" href="https://login">Prime</a>
+    <a title="youtube" href="httpsfoca://">youtube</a>
+</body>
+</html>

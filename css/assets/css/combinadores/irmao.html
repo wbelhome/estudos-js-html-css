@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            div + p{
+                color: tomato;
+            }
+            /* IRMAO ADJACENTE só é aplicado o css para o próximo irmão*/
+            .fundo-azul + p{
+                background: lightgreen;
+            }
+            /*irmão geral se aplica a todos irmãos de fundo verde */
+            .fundo-verde ~ p{
+                background: rgb(26, 38, 204);
+            }
+            
+            .fundo-verde span{
+                color: rgb(226, 20, 13);
+            }
+            /*muda apenas o irmão do p*/
+            .fundo-azul p ~ p {
+                color: orange;
+            }
+  </style>
+</head>
+<body>
+    <div class="fundo-azul">
+        <p>paragrafo 1 dentro da div</p>
+        <p>paragrafo 2 dentro da div</p>
+        <span>
+            <p>paragrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+    <p>paragrafo 4 fora da div</p>
+    <p>paragrafo 5 fora da div</p>
+    <div class="fundo-verde">
+        <p>paragrafo 6 dentro da div</p>
+        <p>paragrafo 7 dentro da div</p>
+        <span>
+            <p>paragrafo 8 dentro da div, dentro do span</p>
+        </span>
+    </div>
+    <p>paragrafo 9 fora da div</p>
+    <p>paragrafo 10 fora da div</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*a virgula serve como a condição OR*/
+        h1, p, div{
+            background-color: aqua;
+        }
+
+        .texto, h1{
+            color: blueviolet;
+        }
+
+        h2, [id^="botao"]{
+            background-color: orange;
+        }
+        
+        /*a virgula serve como a condição AND*/
+        p.texto{
+            background-color: rgb(42, 81, 165);
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de seletores</h1>
+    
+    <h2>teste agrupamento</h2>
+
+    <a id="link-referencia"  href="#">Clique aqui para ver</a>
+    
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod, excepturi necessitatibus iure odit atque harum obcaecati? Dolorem in itaque quos possimus laborum quasi iure quaerat reiciendis odit quam. Voluptatum!</p>
+    
+    <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi vitae quasi ullam atque repudiandae dolorem architecto officia rerum maiores, alias voluptatibus excepturi laborum numquam omnis odio id animi officiis?</div>
+    
+    <br>
+    <a id="botao-voltar"  href="#">Clique aqui para ver</a>
+    <br>
+    <br>
+    <a id="botao-fechar"  href="#">Clique aqui para ver</a>
+</body>
+</html>
