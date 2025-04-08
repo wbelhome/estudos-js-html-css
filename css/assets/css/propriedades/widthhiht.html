@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            /*
+            initial ---> fica o valor padrão, caso não saber o tamanho 
+            auto ---> Fica do tamanho do texto
+            inherit
+            */
+            background-color: lightblue;
+            width: initial;
+            height: auto;
+        }
+        div{
+            background-color: lightcoral;
+            width: auto;
+        }
+        #div1{
+            background: lightblue;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div2{
+            background: lightgreen;
+            height: inherit;
+        }
+
+        /*
+        min-width
+        min-height --> propriedades para delimitar a tag para o minimo ou o maximo 
+        max-width
+        max-height
+        */
+        #button{
+            background: lightgrey;
+            min-width: 200px;
+            min-width: 200px;
+        }
+        
+        #button1{
+            background: lightgrey;
+            max-width: 500px;
+            max-height: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>LARGURA, ALTURA, MAX E MIN</h1>
+    <button>Trilha CSS</button>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quia deserunt voluptatum nulla aspernatur molestias impedit omnis explicabo itaque, ullam magnam vel facilis sequi ducimus modi quasi debitis ex expedita.</div>
+    <br>
+    <div id="div1"> sou a div 1
+        <div id="div2">
+            sou a div 2, div 2 copia as propriedades da tag pai
+        </div>
+    </div>
+    <br>
+    <button id="button">enviar arquivo enviar arquivo enviar arquivo</button>
+    <br>
+    <button id="button1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tenetur! Veniam incidunt earum necessitatibus cupiditate ut assumenda, perspiciatis esse eveniet enim. Dolore aliquam maiores quibusdam repellendus, animi quae quasi totam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tenetur! Veniam incidunt earum necessitatibus cupiditate ut assumenda, perspiciatis esse eveniet enim. Dolore aliquam maiores quibusdam repellendus, animi quae quasi totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tenetur! Veniam incidunt earum necessitatibus cupiditate ut assumenda, perspiciatis esse eveniet enim. Dolore aliquam maiores quibusdam repellendus, animi quae quasi totam.
+    </button>
+</body>
+</html>

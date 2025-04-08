@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+        border-sizing - mantem o padrão de tamanho definido na div no nesse caso 200px
+        width + borda + padding 
+        200 + 20 + 20 = 240
+        160 + 20 + 20 = 200
+        */
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px
+        }
+        #ele-1 {
+            background-color: aqua;
+            
+        }
+
+        #ele-2 {
+            background-color: blueviolet;
+            margin: 20px 0px 20px 100px ;
+        }
+
+        #ele-3 {
+            background-color: rgb(6, 15, 15);
+            box-sizing: border-box;  
+        }
+
+    </style>
+</head>
+<body>
+    <h1>BOXSIZING - soma os tamanhos dos elementos</h1>
+    <div id="ele-1"></div>
+    <div id="ele-2"></div>
+    <div id="ele-3"></div>
+</body>
+</html>
