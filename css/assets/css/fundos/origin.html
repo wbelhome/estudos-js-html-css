@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-image: url(../imagem/eu.jpeg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 15px dashed lightcoral;
+            padding: 30px;
+        }
+        /*PADDING-BOX cobre a parte interna da borda*/
+        #container{
+           background-origin: padding-box;
+
+        }
+        /*BORDER-BOX cobre até a borda do container*/
+        #container2{
+            background-origin: border-box;
+        }
+        /*CONTENT-BOX cobre apenas o conteudo do elemento*/
+        #container3{
+            background-origin: content-box;
+        }
+        
+        #container4{
+            
+        }
+        
+        #container5{
+            
+        }
+
+        #container6{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3 PATTERNS GALLERY</h1>
+    <h1>BACKGROUD-ORIGIN: padding-box</h1>
+    <div id="container"></div>
+    <br>
+    <H1>BACKGROUD-ORIGIN: border-box</H1>
+    <div id="container2"></div>
+    <br>
+    <H1>BACKGROUD-ORIGIN: content-box</H1>
+    <div id="container3"></div>
+    <br>
+    <H1>BACKGROUD-REPEAT: space</H1>
+    <div id="container4"></div>
+    <br>
+    <H1>BACKGROUD-REPEAT: round</H1>
+    <div id="container5"></div>
+    <br>
+    <H1>BACKGROUD-REPEAT: no-repeat</H1>
+    <div id="container6"></div>
+</body>
+</html>

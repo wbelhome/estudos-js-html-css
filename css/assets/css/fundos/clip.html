@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 15px dashed palegreen;
+            color: white;
+            font-size: 40px;
+            font-weight: 900;
+            background-color: palevioletred;
+            padding: 30px;
+        }
+        /*PADDING-BOX cobre a parte interna da borda*/
+        #container{
+           background-clip: padding-box;
+
+        }
+        /*BORDER-BOX cobre até a borda do container*/
+        #container2{
+            background-origin: border-box;
+        }
+        /*CONTENT-BOX cobre apenas o conteudo do elemento*/
+        #container3{
+            background-origin: content-box;
+        }
+        
+        #container4{
+            
+        }
+        
+        #container5{
+            
+        }
+
+        #container6{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3 PATTERNS GALLERY</h1>
+    <h1>BACKGROUD-CLIP: padding-box</h1>
+    <div id="container">TRILHA CSS</div>
+    <br>
+    <H1>BACKGROUD-CLIP: border-box</H1>
+    <div id="container2">TRILHA CSS</div>
+    <br>
+    <H1>BACKGROUD-CLIP: content-box</H1>
+    <div id="container3">TRILHA CSS</div>
+    <br>
+    <H1>BACKGROUD-CLIP: TEXT</H1>
+    <div id="container4">TRILHA CSS</div>
+    <br>
+    <H1>BACKGROUD-CLIP: round</H1>
+    <div id="container5">TRILHA CSS</div>
+    <br>
+    <H1>BACKGROUD-CLIP: no-repeat</H1>
+    <div id="container6">TRILHA CSS</div>
+</body>
+</html>

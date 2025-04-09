@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*BACKGROUD-IMAGE se a imagem for menor ela se repete dentro do container, é possivel sobre por imagens*/
+        #container{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            background-image: url(../imagem/eu.jpeg);
+        }
+        
+        #container2{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            background-image: linear-gradient(lightpink, red, purple);
+        }
+        #container3{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            background-image: radial-gradient(lightpink, red, purple);
+        }
+        #container4{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            background-image: repeating-linear-gradient(to top, lightpink 0 20px, palevioletred  20px 40px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3 PATTERNS GALLERY</h1>
+    <h1>BACKGROUD-IMAGE COM URL DE IMAGEM</h1>
+    <div id="container"></div>
+    <br>
+    <H1>
+        BACKGROUD-IMAGE: LINEAR-GRADIENT</H1>
+    <div id="container2"></div>
+    <br>
+    <H1>BACKGROUD-IMAGE: RADIAL-GRADIENT</H1>
+    <div id="container3"></div>
+    <br>
+    <H1>BACKGROUD-IMAGE: REPEAT</H1>
+    <div id="container4"></div>
+</body>
+</html>

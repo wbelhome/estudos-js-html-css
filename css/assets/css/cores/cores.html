@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        w3school tem 140 cores predefinidas prontas
+        */
+        #pre-definida{
+            color: aqua;
+        }
+
+        div{
+            background: rgb(207, 127, 98);
+        }
+        /*
+        CURRENTCOLOR é a propriedade que utiliza a mesma cor definida em color 
+        */
+        #currentcolor{
+            color: rgb(0, 255, 0);
+            border: 2px solid currentColor;
+        }
+    
+        #rgb {
+            color: rgb(192, 39, 172)
+        }
+        /*RGBA tem transparência indo de 0 a 1*/
+        #rgba {
+            color: rgba(0, 204, 255, 0.5)
+        }
+
+        #hexadecimal{
+            color: #542231;
+        }
+
+        /*
+        HSL HUE=RODA SATURAÇÃO=PORCENTUAL E LUMINOSIDADE=PORCENTAGEM
+        */
+        #hsl{
+            background: hsl(8, 100%, 80%);
+        }
+
+        #hsla{
+            background: hsla(18, 100%, 30%, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1 >Cores pré-definidas</h1>
+    <div id="pre-definida"> pré-definidas</div>
+    <div id="currentcolor">currentcolor</div>
+    <div id="hexadecimal">Hexadecimal</div>
+    <div id="rgb">RGB</div>
+    <DIv id="rgba">RGBA</DIv>
+    <DIv id="hsl">HSL</DIv>
+    <DIV id="hsla">HSLA</DIV>
+</body>
+</html>
