@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Roboto, sans-serif;
+        }
+        div{
+            background-color: lightcoral;
+            width: 200px;
+            height: 200px;
+            border: 100px solid;
+            border-image-source: url(../imagem/eu.jpeg);
+        }
+        
+        #container2{
+            border-image: linear-gradient(rgb(0, 255, 242),blue);
+            border-image-slice: 10;
+
+        }
+        /*Fatia o container em 9 partes, sem a nona sem imagem no meio
+        width é o tamanho da borda
+        */
+        #container3{
+            border-image-source: url(../imagem/eu.jpeg);
+            border-image-slice: 280;
+            border-image-width: 50px 100px;
+    
+          
+        }
+        
+        #container4{
+            border-image: linear-gradient(rgb(0, 255, 242),blue);
+            border-image-slice: 10;
+            border-image-repeat: space;
+            
+        }
+
+        #container5{
+            border-image: linear-gradient(rgb(0, 255, 242),blue);
+            border-image-slice: 10;
+            border-image-repeat: repeat;
+            
+            
+        }
+        /*estica o valor 5 top, 6 right, 7 bottom, 8 left*/
+        #container6{
+            
+            border-image-slice: 800;
+            border-image-repeat: stretch;
+        }
+
+        #container7{
+            border-image-outset: 50px;
+        }
+        #container8{
+            border-image: url(..//imagem/eu.jpeg) 169 / 10px /0.1 round;
+        }
+    </style>
+</head>
+<body>
+    <H1>Bordas</H1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+    
+    <h1>EXEMPLO:</h1>
+    <H1>border-image-SOURCE</H1>
+    <div id="container"></div>
+    <br>
+    <H1>border-image-source linear-gradient</H1>
+    <div id="container2"></div>
+    <br>
+    <H1>border-image-slice == fatiado </H1>
+    <div id="container3"></div>
+    <br>
+    <h1>border-image-repeat: space</h1>
+    <div id="container4"></div>
+    <br>
+    <h1>border-image-repeat: repeat;</h1>
+    <div id="container5"></div>
+    <br>
+    <h1>border-image-repeat: stretch;</h1>
+    <div id="container6"></div>
+    <br>
+    <h1>border-image-outset: valor;</h1>
+    <div id="container7"></div>
+    <br>
+    <h1>border-image-outset: com varios;</h1>
+    <div id="container8"></div>
+    <br>
+    <h1>border-image-outset: stretch;</h1>
+    <div id="container9"></div>
+</body>
+</html>

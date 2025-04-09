@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
         div{
+            /*BACKGROUND-BLEND-MODE mescla filtros na imagem*/
             font-family: Arial, Helvetica, sans-serif;
             width: 300px;
             height: 300px;
@@ -14,15 +15,16 @@
             padding: 30px;
             font-size: 40px;
             font-weight: 900;
-            background-color: palevioletred;
-            background-color: #6d695c;
-background-image:
-repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-background-size: 70px 120px;
-            
+            background: 
+            url(../imagem/eu.jpeg), url(../imagem/pngwing.com.png)
+            200px 200px
+            no-repeat
+            fixed
+            padding-box
+            blue
+
+            ;
+           
         }
         /*PADDING-BOX cobre a parte interna da borda*/
         #container{
@@ -55,22 +57,9 @@ background-size: 70px 120px;
 </head>
 <body>
     <h1>CSS3 PATTERNS GALLERY</h1>
-    <h1>BACKGROUD-CLIP: padding-box</h1>
+    <h1>Muitas PROPRIEDADES do BACKGROUND</h1>
     <div id="container">TRILHA CSS</div>
     <br>
-    <H1>BACKGROUD-CLIP: border-box</H1>
-    <div id="container2">TRILHA CSS</div>
-    <br>
-    <H1>BACKGROUD-CLIP: content-box</H1>
-    <div id="container3">TRILHA CSS</div>
-    <br>
-    <H1>BACKGROUD-CLIP: TEXT</H1>
-    <div id="container4">TRILHA CSS</div>
-    <br>
-    <H1>BACKGROUD-CLIP: round</H1>
-    <div id="container5">TRILHA CSS</div>
-    <br>
-    <H1>BACKGROUD-CLIP: no-repeat</H1>
-    <div id="container6">TRILHA CSS</div>
+    <H1></H1>
 </body>
 </html>
