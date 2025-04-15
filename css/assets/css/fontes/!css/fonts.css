@@ -1,0 +1,49 @@
+/*o asterisco seleciona todas tag do arquivo*/
+/*
+*{
+    font-family: arial;
+}
+*/
+
+/* LOCAL() procura primeiramente na internet, se n achar utiliza o URL() == CALLBACK*/
+/*@font-face {
+    font-family: Roboto;
+    src: local() url("../!css/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Batata;
+    src:  url("../!css/Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Italico;
+    src:  url("../!css/Roboto-LightItalic.ttf");
+    
+}
+
+@font-face {
+    font-family: Superbold;
+    src:  url("../!css/Roboto-ExtraBold.ttf");
+    font-weight: lighter;
+}
+
+p{
+    font-family: Superbold;
+}
+
+
+h1{
+    font-family: Batata;
+}
+
+*{
+    font-family: Roboto;
+}
+
+LI{
+    font-family: Italico;
+} */
+
+/*importando o ccs global*/
+@import url(../!css/global.css);
