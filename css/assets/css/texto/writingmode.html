@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgreen;
+        }
+
+        #exemplo{
+            width: 100px;
+            color: white;
+            background-color: violet;
+        }
+
+        #ex{
+            color: black;
+            writing-mode: horizontal-tb;
+        }
+
+        /*RL --> right left, da direita para esquerda*/
+        #ex1{
+            writing-mode: vertical-rl;
+            color: black;
+        }
+
+        #ex2{
+            writing-mode: vertical-lr;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades <code>writing-mode</code> </h1>
+    <h2>WRITING-MODE: Define orientação do texto, vertical ou horizontal, usado para alguns idiomas </h2> 
+
+    <h3>writing-mode: horizontal-tab</h3>
+    <DIV id="exemplo">
+    <p id="ex"> TRILHA DE CSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+    </DIV>
+    <br>
+
+    <h3>writing-mode: vertical-rl</h3>
+    <DIV id="exemplo">
+        <p id="ex1"> TRILHA DCSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+    </DIV>
+        <br>
+        <h3>writing-mode: vertical-lr</h3>
+    <DIV id="exemplo">
+            <p id="ex2"> TRILHA DCSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS
+                E CSSTRILHA DE CSS
+            </p>
+    </DIV>
+        
+</body>
+</html>

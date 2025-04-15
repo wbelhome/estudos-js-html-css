@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemplo{
+            background-color: lightsalmon;
+            border: 3px solid purple;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #ex1{
+            overflow: visible;
+        }
+
+        #ex2{
+            overflow: hidden;
+        }
+
+        #ex3{
+            overflow: scroll;
+        }
+
+        #ex4{
+            overflow: auto;
+        }
+
+        #ex5{
+            overflow-y: scroll;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade: <code>OVERFLOW</code></h1>
+    <H2>OVERFLOW:  Controla o conteúdo que vai ser exibido</H2>
+    <h3>overflow: visible, exibi mesmo ultrapassando a box</h3>
+    <div class="exemplo">
+        <p id="ex1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim ad doloribus nihil explicabo exercitationem ut, aspernatur cupiditate blanditiis, dolor laboriosam debitis est odio a consequatur. Sed at esse quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque tenetur fugiat cum officia voluptate itaque perferendis iste aperiam, temporibus, ducimus laudantium iure earum labore eveniet vero dolor in. Explicabo, cum?
+        </p>
+    </div>
+    <br><br><br><br><br><br>
+    <h3>overflow: hidden, não mostra o texto caso ultrapasse a box </h3>
+    
+        <p id="ex2" class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim ad doloribus nihil explicabo exercitationem ut, aspernatur cupiditate blanditiis, dolor laboriosam debitis est odio a consequatur. Sed at esse quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis natus sed vitae atque dolores quaerat expedita ut omnis, autem non consequatur quos consequuntur, obcaecati adipisci excepturi incidunt et vero fugiat?
+        </p>
+
+        <h3>overflow: scroll, cria barra de rolagem caso texto for maior que a box</h3>
+    
+        <p id="ex3" class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim ad doloribus nihil explicabo exercitationem ut, aspernatur cupiditate blanditiis, dolor laboriosam debitis est odio a consequatur. Sed at esse quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis natus sed vitae atque dolores quaerat expedita ut omnis, autem non consequatur quos consequuntur, obcaecati adipisci excepturi incidunt et vero fugiat?
+        </p>
+
+        <h3>overflow: auto, se o texto for maior que a caixa cria a barra de rolagem, se no texto for pequeno não cria</h3>
+        <p id="ex4" class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim ad doloribus nihil explicabo exercitationem ut, aspernatur cupiditate blanditiis, dolor laboriosam debitis est odio a consequatur. Sed at esse quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis natus sed vitae atque dolores quaerat expedita ut omnis, autem non consequatur quos consequuntur, obcaecati adipisci excepturi incidunt et vero fugiat?
+        </p>
+
+        <h3>overflow-x e overflow-y</h3>
+        <p id="ex5" class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim ad doloribus nihil explicabo exercitationem ut, aspernatur cupiditate blanditiis, dolor laboriosam debitis est odio a consequatur. Sed at esse quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis natus sed vitae atque dolores quaerat expedita ut omnis, autem non consequatur quos consequuntur, obcaecati adipisci excepturi incidunt et vero fugiat?
+        </p>
+    
+</body>
+</html>

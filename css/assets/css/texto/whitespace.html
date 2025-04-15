@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgreen;
+        }
+
+        #exemplo{
+            width: 370px;
+            border: 1px solid black;
+            background-color: lightgreen;
+            
+            
+        }
+
+        #ex{
+            background-color: green;
+            white-space: normal;
+        }
+
+        #ex2{
+            white-space: nowrap;    
+            background-color: green;
+        }
+
+        #ex3{
+            white-space: pre;
+            background-color: green;
+        }
+
+        #ex4{
+            
+            white-space: pre-line;
+            background-color: green;
+        }
+
+        #ex5{
+            background-color: green;
+            white-space: pre;
+        }
+
+        #ex6{
+            background-color: green;
+            white-space: break-spaces;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades <code>white-space</code></h1>
+    <h2>WHITE-SPACE: define como os espaços em branco e quebras de linha de cada elemento tratado </h2>
+    
+    <h3>WHITE-SPACE: normal, só usa um espaço</h3>
+    <DIV id="exemplo">
+    <span id="ex"> adipisicing elit         . Hic facilis at sequi exercitationem facere repudiandae maxime   quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam?   Possimus facilis beatae amet unde. Obcaecati.</span>
+    </DIV>
+    <br>
+    <h3>WHITE-SPACE: nowrap, fica somente em uma linha, sem quebra de linha</h3>
+    <DIV id="exemplo">
+        <span id="ex2"> adipisicing elit. Hic facilis at sequi exercitationem facere repudiandae maxime quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam? Possimus facilis beatae amet unde. Obcaecati.</span>
+        </DIV>
+    <br>
+    <h3>WHITE-SPACE: pre, ele mantem o texto igual ao que foi digitado</h3>
+    <DIV id="exemplo">
+        <span id="ex3"> adipisicing       elit. Hic facilis at sequi exercitationem facere repudiandae maxime quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam? Possimus facilis beatae amet unde. Obcaecati.</span>
+        </DIV>
+        <br>
+    <h3>WHITE-SPACE: pre-line, mantem as quebras de linha</h3>
+    <DIV id="exemplo">
+        <span id="ex4"> adipisicing elit.
+             Hic facilis at sequi exercitationem facere repudiandae maxime quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam? Possimus facilis beatae amet unde. Obcaecati.</span>
+        </DIV>
+        <br>
+        <h3>WHITE-SPACE: pre-wrap, preserva os espaços em branco e mantem as quebras de linhas</h3>
+        <DIV id="exemplo">
+            <span id="ex5"> adipisicing elit.
+                 Hic facilis at sequi exercitationem facere repudiandae maxime quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam? Possimus facilis beatae amet unde. Obcaecati.</span>
+            </DIV>
+
+            <h3>WHITE-SPACE: break-space, quebra os espaços</h3>
+        <DIV id="exemplo">
+            <span id="ex6"> adipisicing elit.
+                 Hic facilis at sequi exercitationem facere repudiandae maxime quisquam voluptate aliquam, excepturi magnam consequuntur qui veniam? Possimus facilis beatae amet unde. Obcaecati.</span>
+            </DIV>
+</body>
+</html>

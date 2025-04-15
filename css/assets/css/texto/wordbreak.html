@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgreen;
+        }
+
+        #exemplo{
+            width: 100px;
+            color: white;
+            background-color: violet;
+        }
+
+        #ex{
+            color: black;
+            word-break: normal;
+        }
+
+        #ex1{
+            word-break: break-all;
+            color: black;
+        }
+
+        #ex2{
+            word-break: keep-all;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades <code>word-break</code> </h1>
+    <h2>WORD-BREAK: Define quando nosso texto tem que quebrar a linha</h2> 
+
+    <h3>word-break: normal: </h3>
+    <DIV id="exemplo">
+    <p id="ex"> TRILHA DE CSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+    </DIV>
+    <br>
+    <h3>word-break: break-all</h3>
+    <DIV id="exemplo">
+        <p id="ex1"> TRILHA DCSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+        </DIV>
+        <br>
+        <h3>word-break: keep-all, usado para japones coreano.... que não podem serem quebradas</h3>
+        <DIV id="exemplo">
+            <p id="ex1"> TRILHA DCSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+            </DIV>
+            <br>
+            <h3>word-break: break-all</h3>
+            <DIV id="exemplo">
+                <p id="ex1"> TRILHA DCSSTRILHADECSSTRILHA DE CSSTRILHA DE CSS</p>
+                </DIV>
+                <br>
+</body>
+</html>

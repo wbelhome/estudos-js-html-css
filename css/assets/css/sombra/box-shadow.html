@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgreen;
+        }
+
+        #ex{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            background-color: #fa8072;
+            margin: 20px auto;
+            
+            /*efeito de botão + sombra + sombra + desfoque + propagação + cor */
+            box-shadow: inset 30px 30px 30px -7px  black ;
+        
+        }
+
+        #ex1{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            background-color: #fa8072;
+            margin: 20px auto;
+            
+            /* sombra + sombra + desfoque + propagação + cor  */
+            box-shadow: 30px 30px 30px -7px  lightblue ;
+        }
+
+        /*adicionando dois efeitos de sombra com virgula*/
+        #ex2{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            background-color: #fa8072;
+            margin: 20px auto;
+            
+            /* sombra + sombra + desfoque + propagação + cor  */
+            box-shadow: 30px 30px 30px -7px  lightblue, inset 30px 30px 30px -7px  black  ;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+
+            /*filter: drop-shadow() função que aplica a sombra na imagem png*/
+            filter: drop-shadow(10px 10px 5px gray); 
+            /* sombra + sombra + desfoque + propagação + cor  */
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>Propriedade: <code>BOX-SHADOW</code></h1>
+    <div id="ex"></div>
+    <div id="ex1"></div>
+    <div id="ex2"></div>
+
+    <img src="../imagem/pngwing.com.png" alt="">
+</body>
+</html>
