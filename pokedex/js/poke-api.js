@@ -10,7 +10,7 @@ const pokeApi = {}
 function convertPokeApiDetailToPokemon(pokeDetail){
     const pokemon = new Pokemon()
     // Pega os detalhes da lista da API e coloca no objeto POKEMON
-    pokemon.number = pokeDetail.order
+    pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
 
     //Mapeia a lista de tipo do pokemon e colocar o tipo primário dele
@@ -32,7 +32,7 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeApiDetailToPokemon)
 }
 
-pokeApi.getPokemons = (offset = 0, limit = 10) =>{
+pokeApi.getPokemons = (offset = 0, limit = 5) =>{
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
     //buscando um resultado HTTP a promise vira response
