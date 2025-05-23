@@ -6,20 +6,35 @@
 }
 
 body{
-    background-color: #f6f8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(../images/folhas.jpg);
+    object-fit: fill;
+}
+
+body  header{
+    justify-content: center;
+    width: 300px;
+    height: 110px;
+    padding: px;
+    margin: 0;
+}
+
+body header img{
+    width: 300px;
+    padding: 0;
+    margin: 0;
 }
 
 .content{
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: white;
-    height: 100%;
 }
 
-.content h1{
-    margin: 0;
-}
 
 @media scream and (min-width: 992px){
      .content{

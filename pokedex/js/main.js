@@ -3,7 +3,7 @@ const pokemonList = document.getElementById('pokemonList');
 
 // Pegando o botão de carregar mais pokemons
 const loadMoreButton = document.getElementById('loadMoreButton')
-const limit = 10;
+const limit = 8;
 let offset = 0;
 const maxRecords = 151;
 
@@ -52,4 +52,3 @@ loadMoreButton.addEventListener('click', () => {
             loadPokemonItens(offset, limit)
         }
 })
-
