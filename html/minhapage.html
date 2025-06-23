@@ -8,18 +8,70 @@
 <body>
     <h1>Desafio DIO: Cria uma página HTML com os conceitos aprendido</h1>
 
-    <h2>Formulário</h2>
+    <h2>Formulário de Exercício</h2>
     
     <fieldset>
         <legend>Dados Pessoas:</legend>
         <form name="singup">
-            <label>Name:</label><input type="text" name="" id=""><br>
-            <label>Endereço:</label><input type="text" name="" id=""><br>
-            <label>Cidade:</label><input type="text" name="" id=""><br>
-            <label>Estado:</label><input type="adress" name="" id=""><br>
-            
+            <label>Name: </label><input type="text" name="" id=""><br>
+            <label>Data de Nascimento: </label><input type="date" name="" id=""><br>
+            <label>Endereço: </label><input type="text" name="" id=""><br>
+            <label>Cidade: </label><input type="text" name="" id=""><br>
+            <label>Estado: </label>
+            <select name="Estado" id="">
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goías</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="tp">Tocantis</option>
+            </select><br>
         </form>
     </fieldset>
-    
+    <fieldset>
+    <legend>Dados Profissionais:</legend>
+    <form action="">
+        <label> Natureza do Cargo:</label><br>
+        <input type="radio" name="cargo" id="" value="Sim">Gerência
+        <input type="radio" name="cargo" id="" value="Sim">Financeiro
+        <input type="radio" name="cargo" id="" value="Sim">TI
+        <input type="radio" name="cargo" id="" value="Sim">ADM
+        <br>
+        <br>
+        <label>Área de Interesse:</label><br>
+        <input type="checkbox" name="area" id=""><label>Computação</label>
+        <input type="checkbox" name="area" id=""><label>Engenharia</label>
+        <input type="checkbox" name="area" id=""><label>História</label>
+        <br><br>
+        <label>Mini-Curriculo:</label> <textarea name="" id="" cols="60" rows="10"></textarea> 
+    </form>
+    </fieldset>
+    </BR>
+    <button>Enviar</button>
+    <button>Limpar</button>
+    <br>
+    <BR></BR>
+    <button><a href="page2.html" >Próximo</a></button>
 </body>
 </html>
