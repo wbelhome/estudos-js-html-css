@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table tr:nth-child(even){
+            background-color: lightcoral;
+        }
+        
+        table tr:hover td{
+            background-color: rgba(141, 141, 141, 0.582);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabelas com HTML:</h1>
+    <h2>Atributos da TAG Table</h2>
+    <ul>
+        <li>summary = Descrição da tabela par ao leitor de tela </li>
+        <li>cellspacing = Espaços da borda</li>
+        <li>cellpadding = Espaços entre texto e borda</li>
+        <li>Tag TH = cabeçalho da tabela</li>
+        <li>Tag TD = Celula da tbela </li>
+    </ul>
+    <table summary="Descrição da tabela par ao leitor de tela " border="1" width="250" align="center">
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Idade:</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td>William</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>8</td>
+        </tfoot> 
+    </table>
+</body>
+</html>
