@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mark com JS</h1>
+    <h2>Digite o texto na caixa abaixo:</h2>
+    <input type="text" name="" id="busca">
+    <p id="descricao">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda obcaecati, perferendis laborum maiores fuga magnam, odit incidunt quibusdam velit doloribus recusandae, aliquam dolorem illo cum quis nulla possimus! Quis, quasi!
+    </p>
+    <script>
+        var searchField = document.getElementById('busca');
+        var descriptionObject = document.getElementById('descricao');
+        var textToSearch = descriptionObject.innerHTML;
+
+        function realizaBusca(busca){
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*<mark/mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+        }
+
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+</body>
+</html>

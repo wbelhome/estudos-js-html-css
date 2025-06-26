@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meter e progress</h1>
+    <p>Meter = Usado para medidas fixas</p>
+    <meter value="10"></meter>
+    <hr>
+    <p>Progress = progresso de uma ação</p>
+    <progress id="progress" max="100" min="0" ></progress>
+    <script>
+        let progress = document.getElementById('progress');
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if (progress.value = 100){
+                alert("Carregamento realizado com sucesso");
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
