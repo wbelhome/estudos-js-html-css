@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inline{
+        display: inline-block;
+    }
+    .ex{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    #elemento-1{
+        background-color: orange;
+    }
+    #elemento-2{
+        background-color: palevioletred;
+        position: relative;
+        top: 20px;
+        right: 50px;
+        /* left e bottom tmbém */
+    }
+    #elemento-3{
+        background-color: lightgreen;
+        
+    }
+    #elemento-4{
+        background-color: aquamarine;
+    }
+    #elemento-5{
+        background-color: violet;
+        position: absolute;
+        right: 1px;
+        
+    }
+    #elemento-6{
+        background-color: blueviolet;
+    }
+    #pai{
+        box-sizing: border-box;
+        height: 300px;
+        border: 1px solid red;
+        background-color: bisque;
+        position: relative;
+    }
+
+    #pai img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #filho{
+        background-color: aqua;
+        width: 300px;
+        position: absolute;
+        top: 30%;
+        margin: 0;
+        right: 20%;
+
+    }
+    
+
+    #filho h3{
+        position: absolute;
+        top: 50%;
+        margin: 0;
+    }
+
+</style>
+<body>
+    <h1>Posicionado os elementos em tela</h1>
+    <p>A propriedade position ajuda a manipular o elemento na sua pagina</p>
+    <ul>
+        <li>position:static, é o padrão do css</li>
+        <li>position:relative, destrava propriedade de top, right, left e bottom, que posiciona o elemento para as direções determinadas</li>
+        <li>position:absolute, destrava propriedade de top, right, left e bottom, porém se posiciona em relação a tela</li>
+        <li>position:fixed</li>
+        <li>position:sticky</li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+    <h4>position:relative, destrava propriedade de top, right, left e bottom, que posiciona o elemento para as direções determinadas</h4>
+    <div id="elemento-1" class="ex inline">Elemento 1</div>
+    <div id="elemento-2" class="ex inline">RELATIVE</div>
+    <div id="elemento-3" class="ex inline">Elemento 3</div>
+    <HR></HR>
+    <h4>position:absolute, destrava propriedade de top, right, left e bottom, porém se posiciona em relação a tela</h4>
+    <div id="elemento-4" class="ex">Elemento A</div>
+    <div id="elemento-5" class="ex">POSITION</div>
+    <div id="elemento-6" class="ex">Elemento C</div>
+
+    <HR></HR>
+    <h3>Position e Relative</h3>
+    <div id="pai">
+        <img src="WhatsApp Image 2025-06-23 at 18.22.46.jpeg" width="200px" alt="">
+        <div id="filho" class="ex">
+            <h3>relative e absolute</h3>
+        </div>
+       
+    </div>
+</body>
+</html>

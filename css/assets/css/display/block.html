@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hidden{
+        visibility: hidden;
+    }
+    .ex{
+        background-color: lightcoral;
+    }
+
+    .esconde-elemento{
+        display: none;
+        
+    }
+
+    .inline-block{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu{
+        background-color: lightpink;
+    }
+
+    .menu ul li{
+        display: inline-block;
+        padding: 20px 40px;
+    }
+
+    .menu ul li a{
+        text-decoration: none;
+        color: black;
+
+    }
+
+    b{
+        margin: 20px;
+        background-color: lightgreen;
+    }
+</style>
+<body>
+    <h1>Display block</h1>
+    <p>Determina como as caixinhas vão se comportar:</p>
+    <p>Dependendo da tag o bloco reage de diferentes formas</p>
+
+    <H3>Tag P</H3>
+    <p class="ex">Exemplo</p>
+    
+    <h3>Tag DIV</h3>
+    <div class="ex">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae corporis vero nisi et. Impedit incidunt, dolor, doloribus, minus architecto quis tenetur recusandae qui vero reprehenderit magnam pariatur aut. Assumenda, temporibus?</div>
+    <br>
+    <h3>Tag SPAN</h3>
+    <span class="ex">Exemplo</span>
+    <span class="ex">Exemplo</span>
+    <span class="ex" style="display:block">Exemplo</span>
+
+    <h1>Display Inline</h1>
+
+    <p>Coloca todos elementos na mesma lina e não aceita propriedades de largura e altura</p>
+
+    <span class="ex">ex inline</span>
+    <em class="ex">ex inline</em>
+    <P>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit. Atque aliquid quos, tempora dolores et dignissimos molestiae laborum facilis inventore rem explicabo esse harum eos saepe mollitia quidem autem quam. Reiciendis!</P>
+
+    <h1>Display Inline-block</h1>
+
+    <p>Da para usar os blocos um do lado do outro como o block-inline e definir altura e largura como o block:</p>
+
+    <span class="inline-block ex">Exemplo inline-block </span>
+    <em class="inline-block ex">Exemplo inline-block</em>
+    
+    <h4>Menu Nav</h4>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">menu link 1</a></li>
+            <li><a href="#">menu link 2</a></li>
+            <li><a href="#">menu link 3</a></li>
+        </ul>
+    </nav>
+
+    <H1>Display NONE</H1>
+
+    <p>Remove elementos</p>
+
+    <h4>Menu Nav</h4>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="#" class="esconde-elemento">menu link</a></li>
+            <li><a href="#">menu link 2</a></li>
+            <li><a href="#">menu link 3</a></li>
+        </ul>
+    </nav>
+
+    <h1>Display: none vs visibility: hidden</h1>
+    <p>
+        Display none remove todos os elementos e o visibility deixa o elemento invisivel
+    </p>
+    
+    <h2>Display: None</h2>
+    <div class="menu">
+        <span >Exemplo</span>
+        <span class="esconde-elemento ex">Exemplo</span>
+        <span >Exemplo</span>
+    </div>
+    <h2>visibility: hidden</h2>
+    <div class="menu">
+        <span >Exemplo</span>
+        <span class="hidden ex">Exemplo</span>
+        <span >Exemplo</span>
+    </div>
+</body>
+</html>
