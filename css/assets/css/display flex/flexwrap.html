@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        padding: 20px;
+        width: 200px;
+        display: flex;
+    }
+
+    #container2{
+        flex-direction: column;
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        display: flex; 
+        flex-wrap: wrap; /* nowrap é como se fosse display inline */
+    }
+
+    #container3{
+        flex-direction: row;
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-wrap: wrap-reverse; 
+    }
+
+    #container4{
+        flex-direction: column;
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-wrap: wrap-reverse; 
+    }
+    
+    #container5{
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-flow: row wrap;
+    }
+
+    #container6{
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-flow: row nowrap;
+    }
+
+    #container7{
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-flow: column wrap;
+    }
+
+    #container8{
+        background: palegreen;
+        padding: 20px;
+        height: 150px;
+        flex-flow:column nowrap;
+    }
+
+    .item{
+        background: orange;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>Display: Flex com Flex-Wrap: Wrap </h1>
+    <h3>Flex-wrap faz os elementos filhos caber dentro do container </h3>
+    <h1>Sem display flex-Wrap</h1>
+    
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+<hr>
+<h1>Com display flex-wrap:wrap</h1>
+<h3>quebra linhas para caber no container</h3>
+    <div class="container" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+    <hr>
+    <h1>Com wrap-reverse em row</h1>
+    <p>Inverte os elementos de dentro do container</p>
+    <div class="container" id="container3">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+<hr>
+<h1>Com wrap-reverse em column</h1>
+    <p>Inverte os elementos de dentro do container</p>
+    <div class="container" id="container4">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+    <hr>
+    <h1>FLEX-FLOW: ROW WRAP</h1>   
+    <p>Flex flow usa flex-direction e wrap na mesma propriedade </p>
+    <div class="container" id="container5">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+        <hr>
+    <h1>FLEX-FLOW: ROW NOWRAP</h1>
+    <p>Flex flow usa flex-direction e nowrap na mesma propriedade </p>
+    <div class="container" id="container6">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+        <hr>
+    <h1>FLEX-FLOW: COLUMN WRAP</h1>
+    <p>Flex flow usa flex-direction e wrap na mesma propriedade </p>
+    <div class="container" id="container7">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+        <hr>
+    <h1>FLEX-FLOW: COLUMN NOWRAP</h1>
+    <p>Flex-flow usa flex-direction e nowrap na mesma propriedade </p>
+    <div class="container" id="container8">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

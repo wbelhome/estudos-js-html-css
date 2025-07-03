@@ -19,16 +19,22 @@
 
     #elemento-1{
         background-color: orange;
+        position: fixed;
+        top: 50px;
+        right: 50%;
+        height: 10px;
     }
     #elemento-2{
         background-color: palevioletred;
         position: relative;
-        top: 20px;
-        right: 50px;
+        top: 30px;
+        left: 50px;
         /* left e bottom tmbém */
     }
     #elemento-3{
         background-color: lightgreen;
+        position: sticky;
+        top: 0;
         
     }
     #elemento-4{
@@ -43,6 +49,20 @@
     #elemento-6{
         background-color: blueviolet;
     }
+
+    #elemento-7{
+        background-color: orange;
+    }
+
+    #elemento-8{
+        background-color: rgb(0, 68, 255);
+    }
+
+    #elemento-9{
+        background-color: rgb(0, 255, 42);
+    
+    }
+
     #pai{
         box-sizing: border-box;
         height: 300px;
@@ -63,7 +83,7 @@
         position: absolute;
         top: 30%;
         margin: 0;
-        right: 20%;
+        right: 10%;
 
     }
     
@@ -88,9 +108,9 @@
 
     <h3>Exemplos:</h3>
     <h4>position:relative, destrava propriedade de top, right, left e bottom, que posiciona o elemento para as direções determinadas</h4>
-    <div id="elemento-1" class="ex inline">Elemento 1</div>
+    <div id="elemento-1" class="ex inline">Ex FlXED</div>
     <div id="elemento-2" class="ex inline">RELATIVE</div>
-    <div id="elemento-3" class="ex inline">Elemento 3</div>
+    <div id="elemento-3" class="ex inline">EX STICKY</div>
     <HR></HR>
     <h4>position:absolute, destrava propriedade de top, right, left e bottom, porém se posiciona em relação a tela</h4>
     <div id="elemento-4" class="ex">Elemento A</div>
@@ -102,9 +122,18 @@
     <div id="pai">
         <img src="WhatsApp Image 2025-06-23 at 18.22.46.jpeg" width="200px" alt="">
         <div id="filho" class="ex">
-            <h3>relative e absolute</h3>
+            <h3>relative e absolute = absolute fica acima do relative como uma modal</h3>
         </div>
-       
     </div>
+
+    <HR></HR>
+    <H3>POSITION FIXED</h3>
+        <p>Position: fixed deixa o elemento fixo quando é scrollado a pagina, usado para menus fixos nas páginas</p>
+    <hr><hr>
+    
+    <h3>POSITION STICKY</h3>
+    <p>Position: Sticky: deixa fixado no topo da tela o elemento conforme o Exemplo</p>
+
+
 </body>
 </html>

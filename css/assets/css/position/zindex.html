@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inline{
+        display: inline-block;
+    }
+    .ex{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        position: absolute;
+        /* opacity: .5; */
+    }
+
+    #elemento-1{
+        background-color: orange;
+        left: 10px;
+        top: 10px;
+        z-index: 4;
+        
+    }
+    #elemento-2{
+        background-color: palevioletred;
+       left: 20px;
+       top: 20px;
+       z-index: 1;
+    }
+    #elemento-3{
+        background-color: lightgreen;
+        left: 30px;
+        top: 30px;
+        z-index: 2;
+    }
+    #elemento-4{
+        background-color: rgb(240, 127, 255);
+        left: 40px;
+        top: 40px;
+        z-index:3 ;
+    }
+</style>
+<body>
+    <div id="elemento-1" class="ex">Elemento 1</div>
+    <div id="elemento-2" class="ex">Elemento 2</div>
+    <div id="elemento-3" class="ex">Elemento 3</div>
+    <div id="elemento-4" class="ex">Elemento 4</div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h1>Propriedade z-index</h1>
+    <p>Precisa utilizar o position:absolute, o z-index define qual elemento vai aparecer primeiro depois vai empilhando um em cima do outro, conforme exemplo.</p>
+    <p>obs.: Só não funciona com position:static</p>
+</body>
+</html>

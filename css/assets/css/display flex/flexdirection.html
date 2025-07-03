@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        padding: 20px;
+        display: flex; /* inline-flex é como se fosse display inline */
+    }
+
+    #container1{
+        flex-direction: row-reverse;
+    }
+
+    #container2{
+        flex-direction: column-reverse;
+        background: palegreen;
+        padding: 20px;
+    }
+
+    #container3{
+        flex-direction: row;
+    }
+
+    #container4{
+        flex-direction: column;
+        background: palegreen;
+        padding: 20px;
+    }
+
+    .item{
+        background: orange;
+        margin: 10px;
+    }
+</style>
+<body>
+        <h1>Propriedade do flex-direction</h1>
+    <h1></h1>
+    <ul>
+        <li>flex-direction: row</li>
+        <li>flex-direction: row-reverse, usado para escrital oriental RTL</li>
+        <li>flex-direction: column</li>
+        <li>flex-direction: column-reverse, usado para escrital oriental RTL </li>
+    </ul>
+    <div class="container" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+<br><br>
+<h1></h1>
+    <div class="container" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
