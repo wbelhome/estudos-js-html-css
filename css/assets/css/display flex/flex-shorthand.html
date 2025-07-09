@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #container4{
+        flex-direction: column;
+    }
+    
+    .item{
+        background: rgb(255, 187, 0);
+    }
+
+    .item1{
+        /* flex <grow> <shrink> <basis> */
+        flex: 1 1 auto;
+    }
+
+    .item2{
+        flex: 2 1 auto;
+        /* initial= flex-grow: 0; flex-shrink: 1; flex-basis: auto 
+        auto */
+    }
+    .item4{
+        align-self: flex-end;
+    }
+</style>
+<body>
+    <h1>SHORTHAND COM FLEX-GROW, FLEX-SHRINK E FLEX-BASIS</h1>
+    <h3>Faz os elementos crescerem, não aceita valor negativo</h3>
+    <h1></h1>
+<h1>flex: grow shrink basis</h1>
+<h3></h3>
+    <div class="container" id="container2">
+        <div class="item item1">Item 1</div>
+        <div class="item item1">Item 2</div>
+        <div class="item item1">Item 3</div>
+
+    </div>
+    <hr>
+    <h1></h1>
+    <p></p>
+    <div class="container" id="container3">
+        <div class="item item2">DIO</div>
+        <div class="item item1">Bem-vindo</div>
+        <div class="item item1">TRILHA CSS</div>
+
+
+    </div>
+<hr>
+<h1></h1>
+<h3></h3>
+<div class="container" id="container4">
+        <div class="item item2">Item 1</div>
+        <div class="item item4">Item 2</div>
+        <div class="item item2">Item 3</div>
+
+
+    </div>
+</body>
+</html>

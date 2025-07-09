@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    #container2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    #container3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    #container4{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 20px; /* SHORTHAND */
+    }
+    
+    .item{
+        background: rgb(255, 187, 0);
+        width: 40px;
+        height: 40px;
+    }
+
+
+</style>
+<body>
+    <h1>GAP</h1>
+    <h3></h3>
+    <h1></h1>
+<h1>column-gap: </h1>
+<h3></h3>
+    <div class="container" id="container2">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+    <hr>
+    <h1>row-gap</h1>
+    <p></p>
+    <div class="container" id="container3">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+<hr>
+<h1>gap: 10px 20px; /* SHORTHAND */</h1>
+<h3></h3>
+<div class="container" id="container4">
+        <div class="item1 item">Item 1</div>
+        <div class="item2 item">Item 2</div>
+        <div class="item3 item">Item 3</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+</body>
+</html>

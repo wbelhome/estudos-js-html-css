@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        padding: 20px;
+        width: 300px;
+        display: flex;
+    }
+
+    #container2{
+        flex-direction: column;
+        background: palegreen;
+        padding: 20px;
+        height: 250px;
+        display: flex; 
+        justify-content: end;
+    }
+
+    #container3{
+        flex-direction: row;
+        background: palegreen;
+        padding: 20px;
+        width: 400px;
+        height: 150px;
+        display:flex ;
+        justify-content: space-between;
+    }
+
+    #container4{
+        flex-direction: row;
+        background: palegreen;
+        padding: 20px;
+        width: 350px;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+    
+    #container5{
+        background: rgb(161, 25, 25);
+        padding: 20px;
+        width: 350px;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    .item{
+        background: orange;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>Justify content</h1>
+    <h3>Alinha os itens no eixo principal</h3>
+    <h1></h1>
+    
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+<hr>
+<h1>justify-content:end</h1>
+<h3></h3>
+    <div class="container" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+
+    </div>
+    <hr>
+    <h1>justify-content: space-between</h1>
+    <p></p>
+    <div class="container" id="container3">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+
+    </div>
+<hr>
+<h1>justify-content: space-evenly</h1>
+<div class="container" id="container4">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+
+    </div>
+    <hr>
+    <h1>justify-content: space-around</h1>
+    <div class="container" id="container5">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background: palegreen;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: normal;
+    }
+
+    #container2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        
+    }
+
+    #container3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+
+    #container4{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .item{
+        background: rgb(255, 187, 0);
+        width: 40px;
+        height: 40px;
+    }
+
+
+</style>
+<body>
+    <h1>Align content</h1>
+    <h3>Alinha os conteudos no eixo transversal</h3>
+    <h1></h1>
+<h1>align-content: space-around;</h1>
+<h3></h3>
+    <div class="container" id="container2">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+    <hr>
+    <h1>align-content: space-evenly;</h1>
+    <p></p>
+    <div class="container" id="container3">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+<hr>
+<h1>        align-content: center;</h1>
+<h3></h3>
+<div class="container" id="container4">
+        <div class="item1 item">Item 1</div>
+        <div class="item2 item">Item 2</div>
+        <div class="item3 item">Item 3</div>
+                <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+
+    </div>
+</body>
+</html>
