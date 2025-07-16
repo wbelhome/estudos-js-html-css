@@ -92,9 +92,13 @@
     /* background-color: aqua; */
     display: flex;
     gap: 10px;
+    
 }
 
-
+.channel .avatar{
+    display: flex;
+    align-items: center;
+}
 
 .channel .conteudo-avatar{
     align-content: center;
