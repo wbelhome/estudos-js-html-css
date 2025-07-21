@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        .container{
+            border: 2px solid ;
+            display: grid;
+            grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+            grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-final];
+        }
+       .container2{
+            border: 2px solid ;
+            display: grid;
+        }
+        .item{
+            text-align: center;
+            background-color: palegoldenrod;
+        }
+        .selected{
+            background-color: rgb(1, 255, 255);
+            /* grid-column: segunda-linha-col / terceira-linha-col;
+            grid-row: linha-meio / linha-fim; */
+            grid-area: linha-meio / segunda-linha-col / linha-fim;
+        }
+       .selected2{
+            background-color: rgb(1, 255, 255);
+
+        }
+</style>
+</head>
+<body>
+    <h1>Grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end</h1>
+    <h2>ver com inspecionar</h2>
+    <div class="container">
+        <div class="item selected">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+        <h1>Grid-area</h1>
+    <h2>ver com inspecionar</h2>
+    <div class="container2">
+        <div class="item selected2">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

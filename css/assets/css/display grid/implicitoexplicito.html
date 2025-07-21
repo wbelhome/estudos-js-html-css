@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +11,47 @@
             margin-bottom: 20px;
             height: 500px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* pode ser usado px, porcentagem... */
-            grid-template-rows: 1fr 1fr ;
+            grid-template-columns: repeat(3, 1fr); /* pode ser usado px, porcentagem... */
+            grid-template-rows: repeat(2,1fr);
             background-color: lemonchiffon;
         }
         
         .container2{
-              border: 1px solid black;
+            border: 1px solid black;
             padding: 10px;
             margin-bottom: 20px;
             height: 500px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* pode ser usado px, porcentagem... */
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3, 1fr); /* valor explicito*/
+            grid-template-rows: repeat(2,1fr); /* valor explicito*/
+            grid-auto-rows: 200px; /* valor implicito*/
             background-color: lemonchiffon;
         }
-
         .container3{
-              border: 1px solid black;
+            border: 1px solid black;
             padding: 10px;
             margin-bottom: 20px;
             height: 500px;
             display: grid;
-            grid-template-columns: 100px repeat(4, 1fr) 100px; /* pode ser usado px, porcentagem... */
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3, 1fr); /* valor explicito*/
+            grid-template-rows: repeat(2,1fr); /* valor explicito*/
+            grid-auto-flow: column;
+            grid-auto-columns: 100px;
             background-color: lemonchiffon;
         }
 
-        .item{
+        .container4{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* valor explicito*/
+            grid-template-rows: repeat(2,1fr); /* valor explicito*/
+            grid-auto-flow: dense;
+            background-color: lemonchiffon;
+        }
+            .item{
             border: 1px solid black;
         }
 
@@ -66,49 +79,47 @@
     </style>
 </head>
 <body>
-    <h1>grid-template-columns e grid-template-rows</h1>
-    <h2>Utilizar a unidade fr = se baseia na fração de espaço disponivel para se organizar</h2>
-    <ul>
-        <li>grid-template-rows: para utilizar a unidade fr precisa colocar o valor de height</li>
-    </ul>
-    
-    <div class="container">
+    <h1>Grid Implícito: celula criada sem valor padrão, Explícito: criada com valor definido</h1>
+        <div class="container">
         <div class="item item1">item 1</div>
         <div class="item item2">item 2</div>
         <div class="item item3">item 3</div>
         <div class="item item4">item 4</div>
         <div class="item item5">item 5</div>
         <div class="item item6">item 6</div>
+        <div class="item item7">item 7: conhecido como implicito por sobrar e fica do tamanho do conteúdo</div>
     </div>
-    <h1>Função repeat:</h1>
-    <div class="container2">
+        <h1>Grid auto rows: deixa em valor padrão os items criados</h1>
+        <div class="container2">
         <div class="item item1">item 1</div>
         <div class="item item2">item 2</div>
         <div class="item item3">item 3</div>
         <div class="item item4">item 4</div>
         <div class="item item5">item 5</div>
         <div class="item item6">item 6</div>
-        <div class="item item1">item 1</div>
-        <div class="item item2">item 2</div>
-        <div class="item item3">item 3</div>
-        <div class="item item4">item 4</div>
-        <div class="item item5">item 5</div>
-        <div class="item item6">item 6</div>
+        <div class="item item7">item 7: conhecido como implicito por sobrar e fica do tamanho do conteúdo</div>
     </div>
-    <h1>Exemplo 2, função repeat:</h1>
-    <div class="container3">
+    <h1>Grid auto flow: column, dense, valor padrão é o row</h1>
+    <h2>column, utilizar grid-auto-columns para definir valor do item que sobra</h2>
+        <div class="container3">
         <div class="item item1">item 1</div>
         <div class="item item2">item 2</div>
         <div class="item item3">item 3</div>
         <div class="item item4">item 4</div>
         <div class="item item5">item 5</div>
         <div class="item item6">item 6</div>
-        <div class="item item1">item 1</div>
-        <div class="item item2">item 2</div>
-        <div class="item item3">item 3</div>
-        <div class="item item4">item 4</div>
-        <div class="item item5">item 5</div>
-        <div class="item item6">item 6</div>
+        <div class="item item7">item 7</div>
     </div>
+        <h2>dense: reposiciona os itens, mas pouco utilizado, pois tem pouco controle sobre o layout</h2>
+        <div class="container4">
+        <div class="item item1">item 1</div>
+        <div class="item item2">item 2</div>
+        <div class="item item3">item 3</div>
+        <div class="item item4">item 4</div>
+        <div class="item item5">item 5</div>
+        <div class="item item6">item 6</div>
+        <div class="item item7">item 7</div>
+    </div>
+
 </body>
 </html>
