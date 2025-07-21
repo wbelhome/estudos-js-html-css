@@ -73,5 +73,5 @@ Fique à vontade para abrir issues, sugerir melhorias ou dar aquele ⭐ se este 
 
 Se quiser trocar uma ideia ou acompanhar meus próximos projetos:
 
-- LinkedIn: [seu_link_aqui](https://www.linkedin.com/in/william-belhome-035501233/)
+- LinkedIn: [William Belhome](https://www.linkedin.com/in/william-belhome-035501233/)
 - GitHub: [wbelhome](https://github.com/wbelhome)
