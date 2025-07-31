@@ -17,20 +17,87 @@
         header h2{
             font-size: 1rem;
         }
+        main{
+            padding: 30px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h3{
+            text-transform: uppercase;
+        }
+
+        .details{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .cards{
+            background-color: lightblue;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        .image-card{
+            background-color: lightblue;
+            border: 1px solid #e2e2e2;
+            padding: 10px;
+            /* Deixa com um tamanho base */
+            flex-basis: 200px; 
+        }
+
+        .image-card img{
+            width: 100%;
+        }
+
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Responsividade com Flexbox</h1>
+        <h2>Exemplo de layout flexível</h2>
     </header>
     <main>
         <section>
             <h3>Saiba mais</h3>
-            <div class="details">
+           <div class="details">
+             <div class="details">
                 <div class="cards">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aut cupiditate hic eaque possimus aliquam debitis modi explicabo est! Eveniet facilis similique laboriosam saepe nam praesentium nostrum hic vitae id.</div>
                 <div class="cards">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aut cupiditate hic eaque possimus aliquam debitis modi explicabo est! Eveniet facilis similique laboriosam saepe nam praesentium nostrum hic vitae id.</div>
                 <div class="cards">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aut cupiditate hic eaque possimus aliquam debitis modi explicabo est! Eveniet facilis similique laboriosam saepe nam praesentium nostrum hic vitae id.</div>
             </div>
+           </div>
+        </section>
+        <section>
+            <h3>Galeria imagens</h3>
+                <div class="galeria">
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                    <div class="image-card">
+                        <img src="../imagem/eu.jpeg" width="300" height="300" alt="eu">
+                    </div>
+                </div>
         </section>
     </main>
 </body>
