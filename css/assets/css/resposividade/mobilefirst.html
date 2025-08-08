@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav li{
+            background-color: lightgreen;
+            padding: 8px;
+            border-radius: 4px;
+            list-style: none;
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        #skills{
+            background-color: lightgreen;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+
+        #skills li{
+            list-style: decimal;
+        }
+
+        #formacao{
+            background-color: lightblue;
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        @media screen and (min-width: 720px){
+            main{
+                flex-direction: row;
+                gap: 24px;
+                max-width: 1200px;
+                margin: 16px auto;
+                flex-wrap: wrap;
+            }
+
+            #apresentacao{
+                flex-basis: 500px;
+            }
+            
+            #skills, #formacao{
+                flex: 1;
+            }
+
+            nav ul{
+                flex-direction: row;
+            }
+
+            nav ul li{
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Conheça meu trabalho</a></li>
+                <li><a href="#">LinkdIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="apresentacao">
+            <h1>William Belhome</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ullam perferendis illum iure officia harum cupiditate repellat magni aspernatur natus! Id ullam voluptatem vitae minima officia rerum magnam consequatur eveniet.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ullam perferendis illum iure officia harum cupiditate repellat magni aspernatur natus! Id ullam voluptatem vitae minima officia rerum magnam consequatur eveniet.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ullam perferendis illum iure officia harum cupiditate repellat magni aspernatur natus! Id ullam voluptatem vitae minima officia rerum magnam consequatur eveniet.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ullam perferendis illum iure officia harum cupiditate repellat magni aspernatur natus! Id ullam voluptatem vitae minima officia rerum magnam consequatur eveniet.</p>
+        </section>
+        <section id="skills">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>TS</li>
+            </ul>
+        </section>
+        <section id="formacao">
+            <ul>
+                <li>Tec Edificações</li>
+                <li>ADS</li>
+                <li>Ciências da computação</li>
+                <li>Pós licenciatura</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
