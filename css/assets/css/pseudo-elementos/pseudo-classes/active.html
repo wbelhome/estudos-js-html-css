@@ -17,42 +17,40 @@
         }
 
         button:hover{
+            background-color: rgb(152, 175, 251);
+            color: darkgreen;
+            border: 1px solid rgb(100, 0, 0);
+            cursor: pointer;
+        }
+
+
+        button:active{
             background-color: palegreen;
             color: darkgreen;
             border: 1px solid darkgreen;
             cursor: pointer;
         }
 
-        .container{
-            width: 100px;
-            height: 100px;
-            background-color: palegoldenrod;
-            margin-top: 30px;
-        }
-
-        .container:hover{
+        a:active{
             background-color: aqua;
         }
 
-        .container button:hover{
-            background-color: purple;
-            color: yellow;
+        h1:active{
+            background-color: blueviolet;
         }
 
     </style>
 </head>
 <body>
-    <h1>Pseudo-classes: HOVER </h1>
+    <h1>Pseudo-classes: ACTIVE </h1>
     
 
     <h2>Identificado por <code>:palavra-chave</code></h2>
 
-    <h1>Serve para estilizar algo quando passa o mouse</h1>
+    <h1>Serve para estilizar algo quando clica com o mouse</h1>
 
     <button>Entrar em contato</button>
-
-    <div class="container">
-        <button>Entrar em contato</button>
-    </div>
+    <BR><br></BR>
+    <a href="https://www.dio.me">DIO.me</a>
 </body>
 </html>
