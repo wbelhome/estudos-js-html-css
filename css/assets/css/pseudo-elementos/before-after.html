@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        p::before{
+            content: "⭢➹";
+            color: red;
+        }
+
+        span::after{
+            content: "⭢➹";
+            color: blue;
+            background-color: aqua;
+        }
+
+        .card-image{
+            width: 300px;
+            height: 300px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: lightblue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(transparent, red);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos: BEFORE e AFTER</h1>
+    
+
+    <h2>Identificado por <code>::palavra-chave</code></h2>
+
+    <h1>Cria estilização antes ou depois </h1>
+    
+    <p>BEFORE: adiciona um elemento antes</p>
+    <p>BEFORE: adiciona um elemento depois</p>
+    <p>
+        <span>Exemplo 1</span>
+        <span>Exemplo 2</span>
+        <span>Exemplo 3</span>
+    </p>
+
+    <div class="card-image"></div>
+</body>
+</html>
