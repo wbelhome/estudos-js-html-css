@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        p:target{
+            background-color: aqua;
+        }
+
+        p:target::before{
+            content: "->";
+            color: red;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: TARGET </h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <h1>
+        Estiliza quando clicamos no link
+    </h1>
+
+    <ul>
+        <li><a href="#p1">paragrafo 1</a></li>
+        <li ><a href="#p2">paragrafo 2</a></li>
+        <li ><a href="#">paragrafo 3</a></li>
+    </ul>
+
+    <h1>Texto</h1>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque ipsum neque sunt? Quo rerum exercitationem, consectetur possimus nisi doloremque perspiciatis sint non nam porro consequuntur ut, dolorum minus ipsum.</p>
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, perspiciatis facilis enim eos nulla dolore provident cumque nostrum dolores doloribus reprehenderit ipsam amet exercitationem assumenda sapiente accusamus quo pariatur expedita?</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        label, button{
+            display: block;
+            margin: 12px;
+            font-size: 1.5rem;
+        }
+
+        input, select{
+            font-size: 1.5rem;
+        }
+
+        input:focus{
+            outline: 2px dashed blue;
+        }
+
+        select:focus{
+            background-color: yellow;
+        }
+
+        /* Remove a estilização ao clicar */
+        button:focus-visible{
+            outline: 3px solid red;
+            outline-offset: 2px;
+            background-color: aqua;
+            color: white;
+        }
+
+
+        /*Foca o elemento de dentro*/
+        label:focus-within{ 
+            font-weight: bold;
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: FOCUS </h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <h1>Estiliza elementos que nos interagimos, usado frequentemente em formulários</h1>
+
+    <ul>
+        <li><code>:focus-within</code></li>
+        <li><code>:focus-visible</code></li>
+    </ul>
+
+    <form action="">
+        <p>Faça seu pedido! Escolha o sabor do sorvete</p>
+        <label for="">Nome Completo:
+            <input type="text" name="nome" id=""> 
+        </label>
+        <label for="">Sabor do Sorvete:
+            <select name="sabor" id="">
+                <option value="chocolate">Chocolate</option>
+                <option value="Morango">Morango</option>
+                <option value="Doce de leite">Doce de leite</option>
+                <option value="Abacaxi">Abacaxi</option>
+            </select> 
+        </label>
+        <button>Finalizar pedido!</button>
+    </form>
+</body>
+</html>
