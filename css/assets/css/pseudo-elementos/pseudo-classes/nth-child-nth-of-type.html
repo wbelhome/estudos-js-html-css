@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        article p:nth-child(2n){
+            color: red;
+        }
+            /*even = par e odd = impar  */
+        li:nth-child(even){
+            color: red;
+        }
+
+        li:nth-child(odd){
+            color: rgb(0, 68, 255);
+        }
+
+        th, td{
+            padding: 1rem;
+        }
+        
+        td + td,
+        th + th{
+            text-align: right;
+        }
+
+        tr:nth-child(even) td {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: NTH-CHILD e NTH-OF-TYPE</h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <ul>
+        <li>NTH-CHILD: seleciona o filho que quer estilizar ou sem indicar</li>
+        <li>NTH-OF-TYPE: seleciona o primeiro TIPO filho que quer estilizar </li>
+    </ul>
+    <hr>
+
+    <article>
+        <span class="exmplo">Teste</span>
+        <!-- <span class="exmplo">Teste</span> -->
+        <p class="exemplo">I first exemplo</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus earum quam similique repellendus quaerat eveniet. Magnam natus, ullam perferendis molestias repudiandae, in ipsum qui, earum est atque sint non!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error dicta dolorum dignissimos? Eum atque dicta enim exercitationem. Eveniet aspernatur corporis debitis. Tempore reiciendis doloremque odio magnam quas at quaerat!</p>
+
+        <p class="exemplo">last paragrafo</p>
+    </article>
+    <hr>
+    <div class="listas">
+        <ul id="lista1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+    </div>
+    <br>
+        <div class="listas">
+        <ul id="lista2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+    </div>
+    <br>
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+        </tr>
+    </thead>    
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>R$ 1000</td>
+            </tr>
+        </tbody>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        form label, form button{
+            display: block;
+            margin-top: 12px;
+        }
+
+        input{
+            padding: 4px 14px;
+            margin-top: 8px;
+            border-style: solid;
+        }
+
+        form{
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: rgb(249, 252, 255);
+        }
+
+        form h3{
+            margin: 0;
+        }
+
+        input:-webkit-autofill {
+            border: 2px solid red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: AUTOFILL e -WEBKIT-AUTOFILL</h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <ul>
+        <li>Estiliza quando esta em autofill os campos</li>
+        <li>Mas só da certo pq precisa usar -WEBKIT-AUTOFILL, pois depende de cada navegador</li>
+    </ul>
+    <form action="">
+        <h3>Faça sua compra:</h3>
+        <label for="email" >E-mail:</label>
+        <input type="email" name="email" required>
+        <span class="error">E-mail inválido</span>
+        
+        <label for="password">Senha:</label>
+        <input type="password" name="senha" required >
+
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

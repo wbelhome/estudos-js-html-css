@@ -26,16 +26,19 @@
             box-shadow: 0 0 5px 2px purple;
         }
 
+        progress:indeterminate{
+            accent-color: red;
+        }
     </style>
 </head>
 <body>
-    <h1>Pseudo-classes: ENABLED e DISABLED </h1>
+    <h1>Pseudo-classes: CHECKED e INDETERMINATE </h1>
     
 
     <h2>Identificado por <code>:palavra-chave</code></h2>
 
     <h1>
-        Estiliza 
+        Estiliza quando estiver com o input checkado, e INDETERMINATE é estilizado quando a estilização é ideterminada
     </h1>
 
     <div>
@@ -65,5 +68,7 @@
         <label for="genero">fem</label>
         <input type="radio" name="genero" id="genero">
         <label for="genero">n binario</label>
+    <HR>
+        <progress > colocar value e max</progress>
 </body>
 </html>

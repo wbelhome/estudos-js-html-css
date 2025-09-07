@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+       main :only-of-type{
+        color: red;
+        font-weight: bold;
+       }
+
+       i, em{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: only-of-type</h1>
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <h1>
+        Estiliza somente o filho de tipo que esta sozinho
+    </h1>
+    <p>UNICO ITEM</p>
+    <main>
+        <div>div 1</div>
+        <p>testando</p>
+        <div>div 2</div>
+        <div>
+            div 3
+            <i>filho unico i</i>
+            <em>em 1</em>
+            <em>em 2</em>
+        </div>
+    </main>
+</body>
+</html>

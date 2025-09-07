@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        form label, form button{
+            display: block;
+            margin-top: 12px;
+        }
+
+        input{
+            padding: 4px 14px;
+            margin-top: 8px;
+        }
+
+        form{
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: rgb(249, 252, 255);
+        }
+
+        form h3{
+            margin: 0;
+        }
+
+        /* 
+        ESTILIZA VALOR VALOR VALIDO E INVALIDO
+        input:valid{
+            border: 1px xolid green;
+            color: green;
+        } 
+
+        input:invalid{
+            border: 1px solid red;
+            color: red;
+        }
+
+        input:invalid + span{
+            color: red;
+        }
+
+        input:valid + span{
+            color: green;
+        } */
+
+        /* 
+        ESTILIZA SE ESTIVER ENTRE OS VALORES MIN E MAX
+        input:in-range{
+            background-color: green;
+        }
+
+        input:out-of-range{
+            background-color: rgb(255, 6, 6);
+            color: white;
+        } */
+
+        /* CRIAR MENSAGENS PARA INVALIDAR */
+        input:in-range, input:valid{
+            border: 1px solid rgb(13, 122, 13);
+            color: greenyellow;
+        }
+
+        input:out-of-range, input:invalid{
+            background-color: rgb(255, 6, 6);
+            color: white;
+        }
+
+        .error{
+            color: orangered;
+            font-size: 0.75rem;
+            display: none;
+            margin-top: 4px;
+        }
+
+        input:invalid + .error{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: VALID, INVALID, IN-RANGE e OUT-RANGE </h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <ul>
+        <li>invalid: estiliza quando o campo estiver invalido</li>
+        <li>valid: estiliza quando o campo estiver valido</li>
+        <li>in-range: estiliza quando estiver entre os valores estabelecidos no MIN e MAX</li>
+        <li>out-range: estiliza quando estiver entre os valores estabelecidos no MIN e MAX</li>
+    </ul>
+    <form action="">
+        <h3>Faça sua compra:</h3>
+        <label for="email" required>E-mail:</label>
+        <input type="email" name="email">
+        <span class="error">E-mail inválido</span>
+        
+        <label for="codigo-produto">Código do produto:</label>
+        <input type="number" name="codigo-produto" min="1000">
+        <span class="error">Código do produto inválido</span>
+
+        <label for="cupom">Cupom de Desconto:</label>
+        <input 
+        type="text" 
+        type="cupom" 
+        pattern="[a-z]+"  
+        placeholder="Apenas letras minúsculas">
+        <span class="error">Cupom inválido</span>
+        
+        <label for="data-nasc">Data de Nascimento:</label>
+        <input 
+        type="date" 
+        name="data-nasc"
+        min="1962-01-01"
+        max="2004-12-31">
+        <span class="error">Data inválida</span>
+
+        <label for="quantidade">Quantidade:</label>
+        <input 
+        type="number"
+        min="3"
+        max="10">
+        <label>
+            <input type="checkbox" required>
+            <span>Li e aceito os termos</span>
+        </label>
+
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>

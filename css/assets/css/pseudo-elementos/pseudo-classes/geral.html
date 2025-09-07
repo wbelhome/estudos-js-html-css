@@ -1,0 +1,17 @@
+:empty : estiliza somente tag sem nada
+
+:is : estiliza todas tags dentro de outra tag
+tag :is(h1, li, .red){} 
+:is(section, article, aside, nav) p{} 
+
+:where mesma coisa que o is 
+
+:not para ignorar estilização
+.class p:not(.outraclass){}
+li:not(:first-child, :last-child){}
+img:not([ALT]]){} 
+
+:has estiliza somente as que tiverem a tag que foi solicitada no caso figcaption
+.gallery figure:has(figcaption){}
+
+.gallery figure:not(:has(figcaption)){} inverte a lógica de estilização, estiliza só que NÃO TENH figcaption

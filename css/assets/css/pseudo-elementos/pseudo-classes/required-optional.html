@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        form label, form button{
+            display: block;
+            margin-top: 12px;
+        }
+
+        input{
+            padding: 4px 14px;
+            margin-top: 8px;
+            border-style: solid;
+        }
+
+        form{
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: rgb(249, 252, 255);
+        }
+
+        form h3{
+            margin: 0;
+        }
+
+        input:required {
+            border-color: rebeccapurple;
+        }
+
+        input:optional {
+            border-color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes: REQUIRED e OPTIONAL</h1>
+    
+
+    <h2>Identificado por <code>:palavra-chave</code></h2>
+
+    <ul>
+        <li>REQUIRED: Estiliza campos obrigatórios</li>
+        <li>OPTIONAL: Estiliza campo opcionais</li>
+    </ul>
+    <form action="">
+        <h3>Faça sua compra:</h3>
+        <label for="email" >E-mail:</label>
+        <input type="email" name="email" required>
+        <span class="error">E-mail inválido</span>
+        
+        <label for="codigo-produto">Código do produto:</label>
+        <input type="number" name="codigo-produto" min="1000" required>
+        <span class="error">Código do produto inválido</span>
+
+        <label for="cupom">Cupom de Desconto:</label>
+        <input 
+        type="text" 
+        type="cupom" 
+        pattern="[a-z]+"  
+        placeholder="Apenas letras minúsculas">
+        <span class="error">Cupom inválido</span>
+        
+        <label for="data-nasc">Data de Nascimento:</label>
+        <input 
+        type="date" 
+        name="data-nasc"
+        min="1962-01-01"
+        max="2004-12-31"
+        required>
+        <span class="error">Data inválida</span>
+
+        <label for="quantidade">Quantidade:</label>
+        <input 
+        type="number"
+        min="3"
+        max="10">
+        <label>
+            <input type="checkbox" required>
+            <span>Li e aceito os termos</span>
+        </label>
+
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
