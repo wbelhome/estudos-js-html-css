@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+            /* perspective-origin: ; */
+        }
+
+        .box{
+            background: linear-gradient(90deg, #fc466b 0%, blue);
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            /* transform: rotateX(20deg) rotateY(40deg) rotateZ(30deg); */
+            /* transform: translateZ(400px); */
+            transform: rotateX(20deg);
+            transition: 1s;
+            transform-origin: left top;
+            perspective: 300px;
+        }
+
+        /* .box:hover {
+            transform: scaleZ(5) rotateX(20deg);
+        }    */
+
+        .box:hover {
+            transform: rotate(100deg);
+        }   
+    </style>
+</head>
+<body>
+    <!-- <h1>Pseudo-elementos: Perspectiva()</h1>
+
+
+    <h2>Identificado por <code>transform: perspectiva()/code></h2>
+
+    <h1>Da perspectiva no elemento pai definido, quanto menor o valor maior a perspectiva
+        
+        EXEMPLOS NO W3SCHOOLS
+        eixo Z de profundidade
+        MATRIX 3D, ver no site
+    </h1>
+
+    <p></p> -->
+
+    <div class="box"></div>
+    
+</body>
+</html>

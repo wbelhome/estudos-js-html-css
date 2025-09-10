@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list{
+            background-color: #d53369;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 20px 20px 10px lightgray;
+        }
+
+        .list li{
+            list-style: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px 32px;
+            margin-bottom: 4px;
+            transition: background 1s;
+        }
+
+        .list li:hover{
+            background-color: #b02151;
+        }
+
+        .list input{
+            accent-color: #daae51;
+        }
+
+        .list input:checked + span{
+            text-decoration: line-through;
+        }
+
+        .list li:has(input:checked){
+            background: #f0ab1a;
+            color: #d53369;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                <span>Cogumelo</span>
+            </label>
+        </li>
+        <li>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                <span>Pães</span>
+            </label>
+        </li>
+        <li>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                <span>Pessego</span>
+            </label>
+        </li>
+        <li>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                <span>Leite</span>
+            </label>
+        </li>
+        <li>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                <span>Macarrão</span>
+            </label>
+        </li>
+        
+    </ul>
+</body>
+</html>

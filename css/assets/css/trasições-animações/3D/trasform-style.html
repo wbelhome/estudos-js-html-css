@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+            perspective-origin: top;
+            /* transform-style: flat; */
+            transform-style: preserve-3d;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            position: absolute;
+        }
+
+
+        .box:nth-child(1){
+            background: linear-gradient(90deg, #fc4646 0%, rgb(255, 145, 0));
+            transform: rotateY(40deg);
+        }
+        .box:nth-child(2){
+            background: linear-gradient(90deg, #e7002e 0%, blue);
+            transform: rotateY(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Pseudo-elementos: transform-style()</h1>
+
+
+    <h2>Identificado por <code>transform: transform-style/code></h2>
+
+    <h1>Flat: Não preserva a posição e não atravessa
+        preserv-3D: Preserva a posição e atravessa elementos filhos
+
+        
+        EXEMPLOS NO W3SCHOOLS
+        eixo Z de profundidade
+    </h1>
+
+    <p></p> -->
+
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

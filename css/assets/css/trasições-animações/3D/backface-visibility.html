@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgray;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+            perspective-origin: top;
+            /* transform-style: flat; */
+            transform-style: preserve-3d;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            color: white;
+            background: linear-gradient(90deg, #fc4646 0%, rgb(255, 145, 0));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(-200deg);
+            /* backface-visibility: hidden; */
+            backface-visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Pseudo-elementos: backface-visibility</h1>
+
+
+    <h2>Identificado por <code>backface-visibility/code></h2>
+
+    <h1>Quando o elemento rotaciona ele pode aparecer espelhado ou deixar invisivel
+
+        
+        EXEMPLOS NO W3SCHOOLS
+        eixo Z de profundidade
+    </h1>
+
+    <p></p> -->
+
+    <div class="box">HEY</div>
+
+</body>
+</html>
