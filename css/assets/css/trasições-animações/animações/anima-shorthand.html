@@ -18,30 +18,32 @@
             height: 200px;
             border-radius: 8px;
             background: #d53369;
-            animation-name: exemplo;
+            /* animation-name: exemplo;
             animation-duration: 4s;
-            /* animation-delay: -2s; */
-            /* animation-iteration-count: infinite; Quantas vezes vai animar */
-            animation-direction: alternate; /*Alterna por onde começa e onde termina, reverse, alterna revertendo*/
-            animation-timing-function: ease-in; /*Altera velocidade de inicio para o fim*/
-            animation-fill-mode: both; /*forwards: quando ele termina a animação mantem o ultimo framw, 
-            backwards: já inicia com a com inicial do frame, 
-            both: inicia com 1 frame e mantem no último*/ 
+            animation-timing-function:linear;
+            animation: delay; 
+            animation-iteration-count: infinite; 
+            animation-direction: alternate;  */
+
+            animation: exemplo 5s linear 2s infinite alternate;
+        }
+
+        .box:hover{
+            animation-play-state: paused;
         }
 
         /* FROM TO */
         @keyframes exemplo{
             0% {
                 background: palegreen;    
-                width: 200px;
+                
             }
             50% {
                 background: purple;
-                width: 500px;
+                
             }
             100%{
                 background: lightcoral;
-                width: 100px  ;
             }
         }
 
