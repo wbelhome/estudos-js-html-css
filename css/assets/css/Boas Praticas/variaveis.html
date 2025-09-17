@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        VARIAVEIS NO CSS 
+        Declaração: --nome-da-variavel--     --bg-color
+        Referência: var(--nome-da-variavel)
+        */
+
+        /* Utilizar root para estilizar global */
+        :root {
+            --font-size-title: 5rem;
+            --box-shadow-default: 10px 10px 10px lightgrey;
+            --text-color: red;
+        }
+
+        body{
+            background-color: var(--bg-body);
+        }
+
+        .light-theme{
+            --bg-body: rgb(255, 255, 255);
+            --bg-gradient: linear-gradient(90deg, #FC466b 0%, #3F5Efb 100%);
+        }
+
+        .dark-theme{
+            --bg-body: rgb(0, 0, 0);
+            --bg-gradient: linear-gradient(90deg, #d17e12 0%, #fb3f3f 100%);
+        }
+        H1{
+            background: var(--bg-gradient);
+            font-size: var(--font-size-title);
+            text-align: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        button{
+            background: var(--bg-gradient);
+            padding: 8px 14px;
+            border-radius: 4px;
+            color: white;
+            box-shadow: var(--box-shadow-default);
+        }
+
+        /* Valor de fall back */
+        p{
+            color: var(--text-color, blue);
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <h1>DIGITAL INNOVATION ONE</h1>
+    <button>CLIQUE AQUI</button>
+    <p>OLA MUNDO</p>
+</body>
+</html>

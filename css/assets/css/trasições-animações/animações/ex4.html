@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #fefefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                180deg,
+                black 0%,  rgb(80, 45, 13) 50%, orange 100%
+            );
+        }
+
+        img{
+            width: 300px;
+        }
+
+        .rocket{
+            animation: rocket 6s ease-in-out infinite alternate ;
+        }
+
+        @keyframes rocket {
+            0%{
+                transform:translateY(20vh);
+            }
+            50%{
+                transform:translateY(-80vh);
+            }
+            100%{
+                transform:translateY(20vh);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img class="rocket" src="./imagensEX/rocket.png" alt="">
+</body>
+</html>
